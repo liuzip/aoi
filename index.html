@@ -1,0 +1,79 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta name="robots" content="nofollow"/>
+        <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta content="always" name="referrer">
+        <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1, user-scalable=no"> 
+        <link rel="icon" href="favicon.ico" type="image/png">
+        <title>AOI</title>
+        <script type="text/javascript" src="jquery-1.11.3.js"></script>
+        <script type="text/javascript" src="aoiDist.js"></script>
+        <!--script type="text/javascript" src="aoiCross.js"></script-->
+        <style>
+            #background{
+                width: 1000px;
+                height: 600px;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                border: 1px solid grey;
+                margin: -301px -501px;
+            }
+
+            #field{
+                width: 800px;
+                height: 100%;
+                position: absolute;
+                top: 0px;
+                left: 0px;
+                overflow: hidden;
+            }
+
+            #info{
+                width: 199px;
+                top: 0px;
+                left: 800px;
+                border-left: 1px solid grey;
+                height: 100%;
+                position: absolute;
+            }
+
+            #info p{
+                margin: 0px;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="background">
+            <canvas id="field" width=800 height=600></canvas>
+            <div id="info">
+                <table style="width: 100%;">
+                    <tr>
+                        <td>fps:</td>
+                        <td id="fps"></td>
+                    </tr>
+                    <tr>
+                        <td>cost:</td>
+                        <td id="timeCost"></td>
+                    </tr>
+                    <tr>
+                        <td>list:</td>
+                        <td id="listNum"></td>
+                    </tr>
+                    <tr>
+                        <td>amount:</td>
+                        <td id="amount"></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <div id="effectedList">
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </body>
+
+</html>
