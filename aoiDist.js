@@ -56,7 +56,7 @@ var checkAvailableDist = function(list){
                 ex = list[j].x,
                 ey = list[j].y,
                 dst = Math.sqrt((sx - ex) * (sx - ex) + (sy - ey) * (sy - ey));
-            if(dst < 10){
+            if(dst <= 10){
                 // $("#effectedList").append("<p>" + list[i].id + "<--->" + list[j].id + "</p>");
                 count ++;
             }
